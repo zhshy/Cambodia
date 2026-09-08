@@ -167,12 +167,19 @@
   .day-body { padding: 16px 20px; }
   .timeline-item { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--border); }
   .timeline-item:last-child { border-bottom: none; }
-  .timeline-time { font-size: 0.82rem; font-weight: 700; color: var(--primary); min-width: 52px; flex-shrink:0; }
+  .timeline-time { font-size: 0.82rem; font-weight: 700; color: var(--primary); min-width: 58px; flex-shrink:0; }
   .timeline-act { font-size: 0.88rem; }
   .timeline-loc { font-size: 0.78rem; color: var(--text-light); }
   .meals-row { display: flex; gap: 12px; margin-top: 10px; flex-wrap:wrap; }
   .meal-badge { font-size: 0.75rem; background: rgba(13,115,119,0.06); padding: 4px 10px; border-radius: 8px; }
   .meal-badge b { color: var(--primary); }
+
+  /* === BUS SCHEDULE === */
+  .bus-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 8px; }
+  .bus-table th { background: var(--primary); color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; }
+  .bus-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .bus-table tr:hover { background: rgba(13,115,119,0.03); }
+  .bus-company { font-weight: 700; color: var(--primary-dark); }
 
   /* === DINING === */
   .food-card {
@@ -246,6 +253,8 @@
   .price-tag { color: #c0392b; font-weight: 700; }
   .note-box { background: rgba(13,115,119,0.05); border-left: 3px solid var(--primary); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.82rem; margin: 10px 0; color: var(--text-light); }
   .note-box b { color: var(--primary-dark); }
+  .warn-box { background: rgba(200,80,80,0.06); border-left: 3px solid #c0392b; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.82rem; margin: 10px 0; color: var(--text-light); }
+  .warn-box b { color: #c0392b; }
 </style>
 </head>
 <body>
@@ -257,56 +266,59 @@
   <span class="cover-dates">12.31 — 1.5</span>
   <span class="cover-dur">6天 / 5晚</span>
   <div class="cover-route">
-    <span>北京</span><span class="cover-arrow">✈</span><span>金边</span><span class="cover-arrow">→</span><span>暹粒</span><span class="cover-arrow">✈</span><span>北京</span>
+    <span>北京</span><span class="cover-arrow">✈</span><span>金边</span><span class="cover-arrow">🚌</span><span>暹粒</span><span class="cover-arrow">🚌</span><span>金边</span><span class="cover-arrow">✈</span><span>北京</span>
   </div>
 </div>
 
 <!-- ========== TOC ========== -->
 <nav class="toc">
   <a href="#itinerary" class="toc-item"><div class="toc-num">01</div><div class="toc-title">行程</div></a>
-  <a href="#attractions" class="toc-item"><div class="toc-num">02</div><div class="toc-title">景点</div></a>
-  <a href="#shopping" class="toc-item"><div class="toc-num">03</div><div class="toc-title">购物</div></a>
-  <a href="#experiences" class="toc-item"><div class="toc-num">04</div><div class="toc-title">体验</div></a>
-  <a href="#dining" class="toc-item"><div class="toc-num">05</div><div class="toc-title">餐饮</div></a>
-  <a href="#tips" class="toc-item"><div class="toc-num">06</div><div class="toc-title">当地贴士</div></a>
+  <a href="#bus" class="toc-item"><div class="toc-num">02</div><div class="toc-title">大巴时刻表</div></a>
+  <a href="#attractions" class="toc-item"><div class="toc-num">03</div><div class="toc-title">景点</div></a>
+  <a href="#shopping" class="toc-item"><div class="toc-num">04</div><div class="toc-title">购物</div></a>
+  <a href="#experiences" class="toc-item"><div class="toc-num">05</div><div class="toc-title">体验</div></a>
+  <a href="#dining" class="toc-item"><div class="toc-num">06</div><div class="toc-title">餐饮</div></a>
+  <a href="#tips" class="toc-item"><div class="toc-num">07</div><div class="toc-title">当地贴士</div></a>
 </nav>
 
 <!-- ========== 01 ITINERARY ========== -->
 <section class="section" id="itinerary">
   <div class="section-header">
     <div class="section-icon">📅</div>
-    <div><div class="section-title">行程安排</div><div class="section-desc">6天5晚 · 北京→金边→暹粒→北京</div></div>
+    <div><div class="section-title">行程安排</div><div class="section-desc">6天5晚 · 北京✈金边🚌暹粒🚌金边✈北京</div></div>
   </div>
 
-  <div class="note-box"><b>行程概览：</b>Day1 抵达金边 · Day2 金边深度游 · Day3 金边→暹粒 · Day4 吴哥窟+小圈 · Day5 女王宫+大圈 · Day6 返程。节奏适中，每天一个主区域+1-2个次要景点，保留用餐和休息时间。</div>
+  <div class="note-box"><b>行程概览：</b>Day1 北京飞金边→深夜大巴去暹粒 · Day2 暹粒抵达+吴哥通王城+日落 · Day3 吴哥窟日出+小圈 · Day4 女王宫+大圈+洞里萨湖 · Day5 暹粒坐大巴回金边 · Day6 金边游览+返程。吴哥集中3天，节奏紧凑但不赶。</div>
+  <div class="warn-box"><b>重要提醒：</b>Day1 到达金边机场后需立刻前往巴士站赶午夜大巴。请提前在网上订好票，确认出发站位置。从机场到市区巴士站约12-20分钟车程（Grab约$7-10）。</div>
 
   <!-- Day 1 -->
   <div class="day-card">
     <div class="day-header">
       <div><div class="day-num">DAY 1</div><div class="day-date">12月31日 · 周三</div></div>
-      <div class="day-theme">北京 → 金边</div>
+      <div class="day-theme">北京 → 金边 → 暹粒（夜巴）</div>
     </div>
     <div class="day-body">
       <div class="timeline-item">
-        <div class="timeline-time">上午</div>
-        <div><div class="timeline-act">北京出发，经昆明/河内/曼谷中转飞往金边</div><div class="timeline-loc">飞行约5-9小时（含中转），建议选早班机</div></div>
+        <div class="timeline-time">全天</div>
+        <div><div class="timeline-act">北京出发，经中转飞往金边</div><div class="timeline-loc">飞行约5-9小时（含中转），需确保23:00前到达金边机场</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">14:00</div>
-        <div><div class="timeline-act">抵达金边国际机场(PNH)，入住酒店</div><div class="timeline-loc">建议住河边区(Sisowath Quay)或市中心，出行便利</div></div>
+        <div class="timeline-time">23:00</div>
+        <div><div class="timeline-act">抵达金边国际机场(PNH)，取行李</div><div class="timeline-loc">尽快出机场，直接打车去巴士站</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">16:00</div>
-        <div><div class="timeline-act">中央市场 Phsar Thmei — 货币兑换、购买电话卡、初步感受金边</div><div class="timeline-loc">Street 172, Daun Penh · <a href="https://www.google.com/maps/place/Central+Market+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div class="timeline-time">23:15</div>
+        <div><div class="timeline-act">乘Grab/出租车前往Night Market Terminal巴士站</div><div class="timeline-loc">约12-20分钟车程，费用约$7-10 · Giant Ibis出发站</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">18:30</div>
-        <div><div class="timeline-act">河边区(Sisowath Quay)散步 + 跨年夜晚餐</div><div class="timeline-loc">沿洞里萨河畔步行，感受金边跨年氛围</div></div>
+        <div class="timeline-time">24:00</div>
+        <div><div class="timeline-act">乘坐卧铺大巴前往暹粒</div><div class="timeline-loc">推荐 Giant Ibis 23:00卧铺车（$21，06:00到）或 Virak Buntham 00:00班次 · 车程约6-7小时</div></div>
       </div>
       <div class="meals-row">
         <div class="meal-badge"><b>午餐</b> 飞机/机场简餐</div>
-        <div class="meal-badge"><b>晚餐</b> Malis Restaurant（高棉菜）</div>
+        <div class="meal-badge"><b>晚餐</b> 飞机餐或机场简餐</div>
       </div>
+      <div class="warn-box"><b>注意：</b>务必提前在 giantibis.com 或 12go.asia 网上订好午夜大巴票，旺季可能满员。23:00到机场的话赶 Giant Ibis 23:00班次非常紧，建议订 23:30 或 00:00 的班次更稳妥。</div>
     </div>
   </div>
 
@@ -314,63 +326,28 @@
   <div class="day-card">
     <div class="day-header">
       <div><div class="day-num">DAY 2</div><div class="day-date">1月1日 · 元旦</div></div>
-      <div class="day-theme">金边深度游览</div>
+      <div class="day-theme">暹粒 · 吴哥通王城 + 日落</div>
     </div>
     <div class="day-body">
       <div class="timeline-item">
-        <div class="timeline-time">08:00</div>
-        <div><div class="timeline-act">金边皇宫 Royal Palace + 银殿</div><div class="timeline-loc">Samdach Sothearos Blvd · <a href="https://www.google.com/maps/place/Royal+Palace+of+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div class="timeline-time">06:00</div>
+        <div><div class="timeline-act">抵达暹粒汽车站，前往酒店</div><div class="timeline-loc">Tuk-tuk到市区约$2-3，建议住老市场/Pub Street附近</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">10:30</div>
-        <div><div class="timeline-act">国家博物馆 National Museum</div><div class="timeline-loc">Street 13 · 馆内禁止拍照</div></div>
+        <div class="timeline-time">07:00</div>
+        <div><div class="timeline-act">酒店办理入住+补觉休息</div><div class="timeline-loc">夜巴后建议休息2-3小时恢复体力</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">12:00</div>
-        <div><div class="timeline-act">午餐 — Friends the Restaurant</div><div class="timeline-loc">Street 13, 215 · <a href="https://www.google.com/maps/search/Friends+the+Restaurant+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div class="timeline-time">10:00</div>
+        <div><div class="timeline-act">老市场周边早餐，购买吴哥通票</div><div class="timeline-loc">3日票 $62（10天内任3天）· 吴哥企业售票处，距市区4km</div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">14:00</div>
-        <div><div class="timeline-act">吐斯廉屠杀博物馆 Tuol Sleng (S-21)</div><div class="timeline-loc">St. 113 · 仅现金 · <a href="https://www.google.com/maps/place/Tuol+Sleng+Genocide+Museum" class="map-link" target="_blank">Google Maps ↗</a></div></div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">16:00</div>
-        <div><div class="timeline-act">琼邑克杀戮中心 Choeung Ek</div><div class="timeline-loc">距S-21约15km，建议Tuk-tuk或Grab前往 · <a href="https://www.google.com/maps/place/Choeung+Ek+Killing+Fields" class="map-link" target="_blank">Google Maps ↗</a></div></div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">18:00</div>
-        <div><div class="timeline-act">塔山寺 Wat Phnom 看日落</div><div class="timeline-loc">Street 96, Norodom Blvd · <a href="https://www.google.com/maps/place/Wat+Phnom" class="map-link" target="_blank">Google Maps ↗</a></div></div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">19:00</div>
-        <div><div class="timeline-act">独立纪念碑夜景 + 河边夜市晚餐</div><div class="timeline-loc">Norodom Blvd · <a href="https://www.google.com/maps/place/Independence+Monument+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
-      </div>
-      <div class="meals-row">
-        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
-        <div class="meal-badge"><b>午餐</b> Friends the Restaurant</div>
-        <div class="meal-badge"><b>晚餐</b> 河边夜市小吃</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Day 3 -->
-  <div class="day-card">
-    <div class="day-header">
-      <div><div class="day-num">DAY 3</div><div class="day-date">1月2日</div></div>
-      <div class="day-theme">金边 → 暹粒</div>
-    </div>
-    <div class="day-body">
-      <div class="timeline-item">
-        <div class="timeline-time">07:30</div>
-        <div><div class="timeline-act">乘巴士/小巴前往暹粒（约6-7小时）</div><div class="timeline-loc">推荐 Giant Ibis / Mekong Express，约 $12-18/人</div></div>
+        <div class="timeline-time">13:00</div>
+        <div><div class="timeline-act">午餐 — 市区简餐</div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">14:30</div>
-        <div><div class="timeline-act">抵达暹粒，入住酒店后午餐</div><div class="timeline-loc">建议住老市场/Pub Street附近</div></div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">15:30</div>
-        <div><div class="timeline-act">购买吴哥通票（3日票 $62）</div><div class="timeline-loc">吴哥企业售票处，距暹粒市区4km</div></div>
+        <div><div class="timeline-act">吴哥通王城 Angkor Thom + 巴戎寺 Bayon</div><div class="timeline-loc">216张"高棉微笑"佛面 · <a href="https://www.google.com/maps/place/Bayon+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">16:30</div>
@@ -381,17 +358,18 @@
         <div><div class="timeline-act">Pub Street 晚餐 + 逛夜市</div><div class="timeline-loc">老市场旁 · <a href="https://www.google.com/maps/search/Pub+Street+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="meals-row">
-        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
-        <div class="meal-badge"><b>午餐</b> 巴士途中小食</div>
-        <div class="meal-badge"><b>晚餐</b> Pub Street 自由选</div>
+        <div class="meal-badge"><b>早餐</b> 老市场小吃</div>
+        <div class="meal-badge"><b>午餐</b> 市区简餐</div>
+        <div class="meal-badge"><b>晚餐</b> Pub Street</div>
       </div>
+      <div class="note-box"><b>贴士：</b>第一天体力可能不足，下午安排轻松些，以通王城+日落为主，不赶太多景点。包车约$15-18/天（Tuk-tuk半天也可）。</div>
     </div>
   </div>
 
-  <!-- Day 4 -->
+  <!-- Day 3 -->
   <div class="day-card">
     <div class="day-header">
-      <div><div class="day-num">DAY 4</div><div class="day-date">1月3日</div></div>
+      <div><div class="day-num">DAY 3</div><div class="day-date">1月2日</div></div>
       <div class="day-theme">吴哥窟 + 小圈</div>
     </div>
     <div class="day-body">
@@ -405,19 +383,23 @@
       </div>
       <div class="timeline-item">
         <div class="timeline-time">09:00</div>
-        <div><div class="timeline-act">吴哥通王城 Angkor Thom + 巴戎寺 Bayon</div><div class="timeline-loc">216张"高棉微笑"佛面 · <a href="https://www.google.com/maps/place/Bayon+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div><div class="timeline-act">塔布笼寺 Ta Prohm（《古墓丽影》取景地）</div><div class="timeline-loc">树根与石墙缠绕奇观 · <a href="https://www.google.com/maps/place/Ta+Prohm+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">12:00</div>
+        <div class="timeline-time">11:00</div>
+        <div><div class="timeline-act">圣剑寺 Preah Khan</div><div class="timeline-loc">吴哥最大寺庙之一 · <a href="https://www.google.com/maps/place/Preah+Khan+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:30</div>
         <div><div class="timeline-act">午餐 — 景点附近餐馆</div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">14:00</div>
-        <div><div class="timeline-act">塔布笼寺 Ta Prohm（《古墓丽影》取景地）</div><div class="timeline-loc">树根与石墙缠绕奇观 · <a href="https://www.google.com/maps/place/Ta+Prohm+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div><div class="timeline-act">比粒寺 Pre Rup + 东梅奔 East Mebon</div><div class="timeline-loc">三层山状寺庙 · <a href="https://www.google.com/maps/place/Pre+Rup+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">16:30</div>
-        <div><div class="timeline-act">圣剑寺 Preah Khan</div><div class="timeline-loc">吴哥最大寺庙之一 · <a href="https://www.google.com/maps/place/Preah+Khan+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div><div class="timeline-act">返回市区休息，Spa放松</div><div class="timeline-loc">推荐 Angel Hand Spa，全身按摩约$8/小时</div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">19:00</div>
@@ -428,15 +410,15 @@
         <div class="meal-badge"><b>午餐</b> 景点附近</div>
         <div class="meal-badge"><b>晚餐</b> Cuisine Wat Damnak</div>
       </div>
-      <div class="note-box"><b>贴士：</b>建议全天包Tuk-tuk（$15-18/天），日出需4:30出发。带防晒霜、遮阳帽和充足饮用水。</div>
+      <div class="note-box"><b>贴士：</b>小圈全天包Tuk-tuk约$15-18，日出需4:30出发。带防晒霜、遮阳帽和充足饮用水。</div>
     </div>
   </div>
 
-  <!-- Day 5 -->
+  <!-- Day 4 -->
   <div class="day-card">
     <div class="day-header">
-      <div><div class="day-num">DAY 5</div><div class="day-date">1月4日</div></div>
-      <div class="day-theme">女王宫 + 大圈</div>
+      <div><div class="day-num">DAY 4</div><div class="day-date">1月3日</div></div>
+      <div class="day-theme">女王宫 + 大圈 + 洞里萨湖</div>
     </div>
     <div class="day-body">
       <div class="timeline-item">
@@ -445,7 +427,7 @@
       </div>
       <div class="timeline-item">
         <div class="timeline-time">10:00</div>
-        <div><div class="timeline-act">比粒寺 Pre Rup</div><div class="timeline-loc">三层山状寺庙 · <a href="https://www.google.com/maps/place/Pre+Rup+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div><div class="timeline-act">罗洛寺群 Roluos Group</div><div class="timeline-loc">9世纪高棉帝国最早的寺庙群 · <a href="https://www.google.com/maps/place/Roluos+Group" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">12:00</div>
@@ -453,7 +435,7 @@
       </div>
       <div class="timeline-item">
         <div class="timeline-time">14:00</div>
-        <div><div class="timeline-act">洞里萨湖 Kampong Phluk 水上村庄日落游船</div><div class="timeline-loc">约4小时 · <a href="https://www.google.com/maps/search/Kampong+Phluk+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div><div class="timeline-act">洞里萨湖 Kampong Phluk 水上村庄日落游船</div><div class="timeline-loc">红树林水道+日落，约4小时 · <a href="https://www.google.com/maps/search/Kampong+Phluk+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">18:30</div>
@@ -464,7 +446,46 @@
         <div class="meal-badge"><b>午餐</b> Sugar Palm</div>
         <div class="meal-badge"><b>晚餐</b> Apsara表演套餐</div>
       </div>
-      <div class="note-box"><b>贴士：</b>女王宫上午光线最佳，雕刻细节最清晰。大圈包车约$30-35/天（含Tuk-tuk等候）。</div>
+      <div class="note-box"><b>贴士：</b>女王宫上午光线最佳，雕刻细节最清晰。大圈+女王宫包车约$30-35/天（含Tuk-tuk等候）。洞里萨湖日落游船约$39-50/人（含接送）。</div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 5</div><div class="day-date">1月4日</div></div>
+      <div class="day-theme">暹粒 → 金边</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">08:00</div>
+        <div><div class="timeline-act">老市场 Old Market 早餐 + 最后采购</div><div class="timeline-loc">Phsar Chas, 2 Thnou St · <a href="https://www.google.com/maps/search/Old+Market+Phsar+Chas+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">09:30</div>
+        <div><div class="timeline-act">Artisans Angkor 工坊参观</div><div class="timeline-loc">了解高棉丝绸、银器、石雕工艺 · <a href="https://www.google.com/maps/search/Artisans+Angkor+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:00</div>
+        <div><div class="timeline-act">退房，前往暹粒巴士站</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:30</div>
+        <div><div class="timeline-act">乘大巴返回金边（约6-7小时）</div><div class="timeline-loc">推荐 Giant Ibis 12:30 Universe Luxury 班次，$19，18:30到金边</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19:00</div>
+        <div><div class="timeline-act">抵达金边，入住酒店</div><div class="timeline-loc">建议住河边区或市中心</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">20:00</div>
+        <div><div class="timeline-act">湄公河日落游船 或 河边晚餐</div><div class="timeline-loc">Sisowath Quay · Kanika双体船约$8起 · <a href="https://www.google.com/maps/search/Sisowath+Quay+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 老市场小吃</div>
+        <div class="meal-badge"><b>午餐</b> 巴士途中小食</div>
+        <div class="meal-badge"><b>晚餐</b> 河边餐厅</div>
+      </div>
     </div>
   </div>
 
@@ -472,34 +493,106 @@
   <div class="day-card">
     <div class="day-header">
       <div><div class="day-num">DAY 6</div><div class="day-date">1月5日</div></div>
-      <div class="day-theme">暹粒 → 北京</div>
+      <div class="day-theme">金边 → 北京</div>
     </div>
     <div class="day-body">
       <div class="timeline-item">
-        <div class="timeline-time">07:00</div>
-        <div><div class="timeline-act">老市场 Old Market 早餐 + 最后采购</div><div class="timeline-loc">Phsar Chas, 2 Thnou St · <a href="https://www.google.com/maps/search/Old+Market+Phsar+Chas+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div class="timeline-time">08:00</div>
+        <div><div class="timeline-act">金边皇宫 Royal Palace + 银殿</div><div class="timeline-loc">Samdach Sothearos Blvd · <a href="https://www.google.com/maps/place/Royal+Palace+of+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">09:00</div>
-        <div><div class="timeline-act">Artisans Angkor 工坊参观</div><div class="timeline-loc">了解高棉丝绸、银器、石雕工艺 · <a href="https://www.google.com/maps/search/Artisans+Angkor+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+        <div class="timeline-time">10:00</div>
+        <div><div class="timeline-act">国家博物馆 National Museum</div><div class="timeline-loc">Street 13 · 馆内禁止拍照 · <a href="https://www.google.com/maps/place/National+Museum+of+Cambodia" class="map-link" target="_blank">Google Maps ↗</a></div></div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">11:00</div>
-        <div><div class="timeline-act">退房，前往暹粒机场(SAI)</div><div class="timeline-loc">距市区约6km，建议提前2小时到达</div></div>
+        <div class="timeline-time">11:30</div>
+        <div><div class="timeline-act">中央市场 Phsar Thmei — 最后采购+午餐</div><div class="timeline-loc">买Kampot胡椒、棕榈糖、丝绸等伴手礼 · <a href="https://www.google.com/maps/place/Central+Market+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:00</div>
+        <div><div class="timeline-act">退房，前往金边机场(PNH)</div><div class="timeline-loc">距市区约12km，建议提前2.5小时到达</div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">下午</div>
         <div><div class="timeline-act">经昆明/河内/曼谷中转返回北京</div><div class="timeline-loc">飞行约5-9小时（含中转）</div></div>
       </div>
       <div class="meals-row">
-        <div class="meal-badge"><b>早餐</b> 老市场小吃</div>
-        <div class="meal-badge"><b>午餐</b> 机场/途中</div>
+        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
+        <div class="meal-badge"><b>午餐</b> 中央市场周边</div>
       </div>
+      <div class="note-box"><b>贴士：</b>下午航班的话，上午还有时间逛皇宫和博物馆。如果是上午航班，建议取消上午景点，直接去机场。出发前确认航班时间。</div>
     </div>
   </div>
 </section>
 
-<!-- ========== 02 ATTRACTIONS ========== -->
+<!-- ========== 02 BUS SCHEDULE ========== -->
+<section class="section" id="bus">
+  <div class="section-header">
+    <div class="section-icon">🚌</div>
+    <div><div class="section-title">金边↔暹粒大巴时刻表</div><div class="section-desc">Giant Ibis · Mekong Express · Virak Buntham</div></div>
+  </div>
+
+  <div class="note-box"><b>购票建议：</b>旺季（12月-1月）建议提前在 giantibis.com 或 12go.asia 网上订票。各公司出发站不同，务必确认具体出发站位置。</div>
+
+  <div class="card">
+    <div class="card-title">Giant Ibis（推荐） <span class="card-title-en">舒适度最高 · GPS追踪 · 免费WiFi</span></div>
+    <div class="card-desc">出发站：Night Market Terminal（Street 106, 金边夜市附近）</div>
+    <table class="bus-table">
+      <thead><tr><th>车型</th><th>出发</th><th>到达</th><th>票价</th></tr></thead>
+      <tbody>
+        <tr><td><span class="bus-company">Exclusive VIP Seater</span></td><td>07:45</td><td>13:45</td><td>$26</td></tr>
+        <tr><td>Universe Luxury</td><td>08:45</td><td>14:45</td><td>$17</td></tr>
+        <tr><td>Universe Luxury</td><td>09:45</td><td>15:45</td><td>$19</td></tr>
+        <tr><td>Universe Luxury</td><td>12:30</td><td>18:30</td><td>$19</td></tr>
+        <tr><td>Exclusive VIP Seater</td><td>14:30</td><td>20:30</td><td>$25</td></tr>
+        <tr><td><span class="tag tag-gold">卧铺 Sleeper</span></td><td><b>22:30</b></td><td>05:30</td><td>$21</td></tr>
+        <tr><td><span class="tag tag-gold">卧铺 Sleeper</span></td><td><b>23:00</b></td><td>06:00</td><td>$21</td></tr>
+      </tbody>
+    </table>
+    <a href="https://www.giantibis.com" class="map-link official-link" target="_blank">🌐 giantibis.com ↗</a>
+    <span class="tag">中途休息1次（30分钟正餐）</span>
+    <span class="tag">充电插座</span>
+    <span class="tag">GPS追踪</span>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Mekong Express <span class="card-title-en">性价比高 · 免费小吃</span></div>
+    <div class="card-desc">出发站：Derm Kor Market 巴士站（靠近中央市场）</div>
+    <table class="bus-table">
+      <thead><tr><th>出发</th><th>到达</th><th>票价</th></tr></thead>
+      <tbody>
+        <tr><td>07:30</td><td>13:30</td><td>$10-12</td></tr>
+        <tr><td>08:30</td><td>14:30</td><td>$10-12</td></tr>
+        <tr><td>12:30</td><td>18:30</td><td>$10-12</td></tr>
+        <tr><td>14:25</td><td>20:25</td><td>$10-12</td></tr>
+        <tr><td>17:30</td><td>23:30</td><td>$10-12</td></tr>
+        <tr><td><b>23:30</b></td><td>05:30</td><td>$10-12</td></tr>
+      </tbody>
+    </table>
+    <span class="tag">免费WiFi</span>
+    <span class="tag">免费小吃</span>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Virak Buntham Express <span class="card-title-en">班次最多 · 24小时运营</span></div>
+    <div class="card-desc">班次最密集，从00:00到23:30约17个班次，有卧铺和VIP车型</div>
+    <table class="bus-table">
+      <thead><tr><th>车型</th><th>出发</th><th>到达</th><th>票价</th></tr></thead>
+      <tbody>
+        <tr><td>卧铺 Hotel Bus</td><td><b>00:00</b></td><td>06:00</td><td>$14</td></tr>
+        <tr><td>卧铺 Hotel Bus</td><td>22:00</td><td>04:00</td><td>$14</td></tr>
+        <tr><td>VIP</td><td>21:30</td><td>04:35</td><td>$16</td></tr>
+        <tr><td>标准</td><td>20:00</td><td>02:00</td><td>$12</td></tr>
+      </tbody>
+    </table>
+    <span class="tag">班次最多</span>
+    <span class="tag">有卧铺</span>
+  </div>
+
+  <div class="warn-box"><b>深夜抵达金边赶大巴方案：</b>23:00到金边机场→Grab打车去Night Market Terminal（约12-20分钟，$7-10）→如果赶 Giant Ibis 23:00班次太紧，建议订 23:30 Mekong Express 或 Virak Buntham 00:00 卧铺班次更稳妥。出发前务必确认巴士站位置！</div>
+</section>
+
+<!-- ========== 03 ATTRACTIONS ========== -->
 <section class="section" id="attractions">
   <div class="section-header">
     <div class="section-icon">🏛</div>
@@ -694,7 +787,7 @@
   </div>
 </section>
 
-<!-- ========== 03 SHOPPING ========== -->
+<!-- ========== 04 SHOPPING ========== -->
 <section class="section" id="shopping">
   <div class="section-header">
     <div class="section-icon">🛍</div>
@@ -787,7 +880,7 @@
   </div>
 </section>
 
-<!-- ========== 04 EXPERIENCES ========== -->
+<!-- ========== 05 EXPERIENCES ========== -->
 <section class="section" id="experiences">
   <div class="section-header">
     <div class="section-icon">🎭</div>
@@ -871,7 +964,7 @@
   </div>
 </section>
 
-<!-- ========== 05 DINING ========== -->
+<!-- ========== 06 DINING ========== -->
 <section class="section" id="dining">
   <div class="section-header">
     <div class="section-icon">🍜</div>
@@ -1042,7 +1135,7 @@
   </div>
 </section>
 
-<!-- ========== 06 LOCAL TIPS ========== -->
+<!-- ========== 07 LOCAL TIPS ========== -->
 <section class="section" id="tips">
   <div class="section-header">
     <div class="section-icon">💡</div>
@@ -1052,13 +1145,13 @@
   <div class="tip-category">
     <div class="tip-title">🚌 当地交通</div>
     <p class="tip-para"><b>金边市内：</b>突突车(Tuk-tuk)短途$1.5-3，中途$3-5，机场到市区$7-10。推荐使用 Grab 或 PassApp APP打车，避免议价。Grab突突车包车2小时约$8，4小时约$22。</p>
-    <p class="tip-para"><b>金边→暹粒：</b>大巴(Giant Ibis/Mekong Express)约$12-18，5.5-7小时，最常用。飞机约$52-90，45-50分钟。包车约$70起，5-6小时。</p>
+    <p class="tip-para"><b>金边↔暹粒大巴：</b>Giant Ibis（最舒适，$17-26）、Mekong Express（性价比高，$10-12）、Virak Buntham（班次最多，$11-16）。车程约5.5-7小时。夜间有卧铺车，$14-21。</p>
     <p class="tip-para"><b>暹粒市内：</b>突突车短途$1-3，吴哥小圈一天$15-18，大圈$18-22。推荐全天包Tuk-tuk，司机兼向导，约$20-35/天。</p>
     <ul class="tip-list">
       <li><b>Grab APP：</b>支持打车和突突车，覆盖金边和暹粒主要城市，价格透明</li>
       <li><b>PassApp：</b>柬埔寨本地打车APP，覆盖面广</li>
-      <li><b>议价提醒：</b>路边突突车建议先谈好价格，或直接用Grab/PassApp避免议价</li>
-      <li><b>吴哥包车：</b>景点较远，建议全天包车或半包车，不要单程叫车</li>
+      <li><b>大巴购票：</b>推荐 giantibis.com 或 12go.asia 提前网上订票，旺季需提前</li>
+      <li><b>各公司出发站不同：</b>Giant Ibis在Night Market Terminal，Mekong Express在Derm Kor Market，务必确认</li>
     </ul>
   </div>
 
@@ -1113,7 +1206,7 @@
 <!-- ========== FOOTER ========== -->
 <div class="footer">
   <p>柬埔寨金边 &amp; 暹粒 · 12.31-1.5 · 6天5晚旅行手册</p>
-  <p style="margin-top:6px;opacity:0.5;">Generated by inChina-travel-guide-skill · Region: International · Data sources: Google Maps / Official Websites / Google Ratings</p>
+  <p style="margin-top:6px;opacity:0.5;">路线：北京✈金边🚌暹粒🚌金边✈北京 · Generated by inChina-travel-guide-skill · Region: International · Data sources: Google Maps / Official Websites / Google Ratings</p>
 </div>
 
 </body>
