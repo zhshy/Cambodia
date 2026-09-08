@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-handbook-region="international">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>柬埔寨金边暹粒6天5晚旅行手册 | 12.31 - 1.5</title>
+<style>
+  :root {
+    --primary: #0d7377;
+    --primary-light: #14a3a8;
+    --primary-dark: #085255;
+    --accent: #3aa3a3;
+    --bg: #f0f7f7;
+    --card-bg: #ffffff;
+    --text: #1a2e35;
+    --text-light: #5a7079;
+    --border: #d1e0e0;
+    --shadow: 0 2px 12px rgba(13, 115, 119, 0.08);
+    --shadow-hover: 0 6px 24px rgba(13, 115, 119, 0.15);
+    --radius: 12px;
+    --gold: #c8a951;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  /* === COVER === */
+  .cover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 40%, var(--primary-light) 100%);
+    color: #fff;
+    padding: 60px 20px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: "";
+    position: absolute;
+    top: -50%; left: -20%;
+    width: 140%; height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .cover-hero { font-size: 2.6rem; font-weight: 800; letter-spacing: 2px; margin-bottom: 6px; }
+  .cover-sub { font-size: 1.05rem; opacity: 0.85; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
+  .cover-dates { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 6px 20px; border-radius: 30px; font-size: 1rem; }
+  .cover-dur { display: inline-block; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 6px 16px; border-radius: 30px; font-size: 0.9rem; }
+  .cover-route { margin-top: 18px; font-size: 1.15rem; opacity: 0.9; }
+  .cover-route span { display: inline-block; margin: 0 8px; }
+  .cover-arrow { opacity: 0.6; margin: 0 4px; }
+
+  /* === TOC === */
+  .toc {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .toc-item {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 18px 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 3px solid var(--primary);
+  }
+  .toc-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+  .toc-num { font-size: 0.75rem; color: var(--primary); font-weight: 700; letter-spacing: 2px; }
+  .toc-title { font-size: 1.1rem; font-weight: 700; margin-top: 4px; }
+  @media(max-width:640px) { .toc { grid-template-columns: repeat(2,1fr); } }
+
+  /* === SECTION === */
+  .section { max-width: 900px; margin: 0 auto; padding: 0 20px 40px; }
+  .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; padding-top: 30px; }
+  .section-icon {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: #fff;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink:0;
+  }
+  .section-title { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); }
+  .section-desc { font-size: 0.85rem; color: var(--text-light); margin-top: 2px; }
+
+  /* === CARD === */
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover { box-shadow: var(--shadow-hover); }
+  .card-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--primary-dark); }
+  .card-title-en { font-size: 0.8rem; color: var(--text-light); font-weight: 400; }
+  .card-desc { font-size: 0.9rem; color: var(--text-light); margin-bottom: 12px; }
+
+  .tag {
+    display: inline-block;
+    background: rgba(13,115,119,0.08);
+    color: var(--primary);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin: 2px 4px 2px 0;
+    font-weight: 600;
+  }
+  .tag-gold { background: rgba(200,169,81,0.12); color: #a8842e; }
+
+  .info-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 6px 16px; margin-top: 10px; }
+  .info-item { font-size: 0.82rem; }
+  .info-label { color: var(--text-light); }
+  .info-value { color: var(--text); font-weight: 600; }
+  @media(max-width:560px) { .info-grid { grid-template-columns: 1fr; } }
+
+  .map-link {
+    display: inline-flex; align-items: center; gap: 4px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-bottom: 1px dashed var(--accent);
+    margin-top: 6px;
+  }
+  .map-link:hover { color: var(--primary-light); }
+  .official-link { color: var(--gold); border-bottom-color: var(--gold); }
+
+  .rating-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    color: #b8860b;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  /* === ITINERARY === */
+  .day-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .day-header {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+    color: #fff;
+    padding: 14px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .day-num { font-size: 0.75rem; letter-spacing: 2px; opacity: 0.8; }
+  .day-date { font-size: 1.15rem; font-weight: 700; }
+  .day-theme { font-size: 0.85rem; opacity: 0.85; }
+  .day-body { padding: 16px 20px; }
+  .timeline-item { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-time { font-size: 0.82rem; font-weight: 700; color: var(--primary); min-width: 52px; flex-shrink:0; }
+  .timeline-act { font-size: 0.88rem; }
+  .timeline-loc { font-size: 0.78rem; color: var(--text-light); }
+  .meals-row { display: flex; gap: 12px; margin-top: 10px; flex-wrap:wrap; }
+  .meal-badge { font-size: 0.75rem; background: rgba(13,115,119,0.06); padding: 4px 10px; border-radius: 8px; }
+  .meal-badge b { color: var(--primary); }
+
+  /* === DINING === */
+  .food-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--primary);
+  }
+  .food-card.snack { border-left-color: var(--accent); }
+  .food-card.detour { border-left-color: var(--gold); }
+  .food-name { font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); }
+  .food-name-local { font-size: 0.8rem; color: var(--text-light); }
+  .food-shop { font-size: 0.85rem; color: var(--text); margin: 4px 0; }
+  .food-price { display: inline-block; background: rgba(13,115,119,0.08); color: var(--primary); padding: 2px 8px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; margin-top: 4px; }
+
+  /* === SOUVENIR === */
+  .souvenir-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+  @media(max-width:560px) { .souvenir-grid { grid-template-columns: 1fr; } }
+  .souvenir-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+    border-top: 3px solid var(--gold);
+  }
+  .souvenir-name { font-size: 1rem; font-weight: 700; color: var(--primary-dark); }
+  .souvenir-note { font-size: 0.8rem; color: var(--text-light); margin-top: 6px; }
+
+  /* === TIPS === */
+  .tip-category {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .tip-title { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 10px; display:flex; align-items:center; gap:8px; }
+  .tip-list { list-style: none; }
+  .tip-list li { font-size: 0.86rem; padding: 5px 0 5px 18px; position: relative; color: var(--text-light); }
+  .tip-list li::before { content: ""; position: absolute; left: 0; top: 12px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .tip-list li b { color: var(--text); }
+  .tip-para { font-size: 0.86rem; color: var(--text-light); margin-bottom: 8px; }
+
+  /* === FOOTER === */
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--primary-dark);
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8rem;
+  }
+  .footer a { color: var(--primary-light); text-decoration: none; }
+
+  /* === MISC === */
+  .city-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .city-badge.sr { background: #b86d28; }
+  .subhead { font-size: 1.15rem; font-weight: 700; color: var(--primary); margin: 20px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media(max-width:560px) { .grid-2 { grid-template-columns: 1fr; } }
+  .price-tag { color: #c0392b; font-weight: 700; }
+  .note-box { background: rgba(13,115,119,0.05); border-left: 3px solid var(--primary); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.82rem; margin: 10px 0; color: var(--text-light); }
+  .note-box b { color: var(--primary-dark); }
+</style>
+</head>
+<body>
+
+<!-- ========== COVER ========== -->
+<div class="cover">
+  <div class="cover-hero">柬埔寨 · 金边 &amp; 暹粒</div>
+  <div class="cover-sub">ITINERARY</div>
+  <span class="cover-dates">12.31 — 1.5</span>
+  <span class="cover-dur">6天 / 5晚</span>
+  <div class="cover-route">
+    <span>北京</span><span class="cover-arrow">✈</span><span>金边</span><span class="cover-arrow">→</span><span>暹粒</span><span class="cover-arrow">✈</span><span>北京</span>
+  </div>
+</div>
+
+<!-- ========== TOC ========== -->
+<nav class="toc">
+  <a href="#itinerary" class="toc-item"><div class="toc-num">01</div><div class="toc-title">行程</div></a>
+  <a href="#attractions" class="toc-item"><div class="toc-num">02</div><div class="toc-title">景点</div></a>
+  <a href="#shopping" class="toc-item"><div class="toc-num">03</div><div class="toc-title">购物</div></a>
+  <a href="#experiences" class="toc-item"><div class="toc-num">04</div><div class="toc-title">体验</div></a>
+  <a href="#dining" class="toc-item"><div class="toc-num">05</div><div class="toc-title">餐饮</div></a>
+  <a href="#tips" class="toc-item"><div class="toc-num">06</div><div class="toc-title">当地贴士</div></a>
+</nav>
+
+<!-- ========== 01 ITINERARY ========== -->
+<section class="section" id="itinerary">
+  <div class="section-header">
+    <div class="section-icon">📅</div>
+    <div><div class="section-title">行程安排</div><div class="section-desc">6天5晚 · 北京→金边→暹粒→北京</div></div>
+  </div>
+
+  <div class="note-box"><b>行程概览：</b>Day1 抵达金边 · Day2 金边深度游 · Day3 金边→暹粒 · Day4 吴哥窟+小圈 · Day5 女王宫+大圈 · Day6 返程。节奏适中，每天一个主区域+1-2个次要景点，保留用餐和休息时间。</div>
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 1</div><div class="day-date">12月31日 · 周三</div></div>
+      <div class="day-theme">北京 → 金边</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">上午</div>
+        <div><div class="timeline-act">北京出发，经昆明/河内/曼谷中转飞往金边</div><div class="timeline-loc">飞行约5-9小时（含中转），建议选早班机</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:00</div>
+        <div><div class="timeline-act">抵达金边国际机场(PNH)，入住酒店</div><div class="timeline-loc">建议住河边区(Sisowath Quay)或市中心，出行便利</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">16:00</div>
+        <div><div class="timeline-act">中央市场 Phsar Thmei — 货币兑换、购买电话卡、初步感受金边</div><div class="timeline-loc">Street 172, Daun Penh · <a href="https://www.google.com/maps/place/Central+Market+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:30</div>
+        <div><div class="timeline-act">河边区(Sisowath Quay)散步 + 跨年夜晚餐</div><div class="timeline-loc">沿洞里萨河畔步行，感受金边跨年氛围</div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>午餐</b> 飞机/机场简餐</div>
+        <div class="meal-badge"><b>晚餐</b> Malis Restaurant（高棉菜）</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 2</div><div class="day-date">1月1日 · 元旦</div></div>
+      <div class="day-theme">金边深度游览</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">08:00</div>
+        <div><div class="timeline-act">金边皇宫 Royal Palace + 银殿</div><div class="timeline-loc">Samdach Sothearos Blvd · <a href="https://www.google.com/maps/place/Royal+Palace+of+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10:30</div>
+        <div><div class="timeline-act">国家博物馆 National Museum</div><div class="timeline-loc">Street 13 · 馆内禁止拍照</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:00</div>
+        <div><div class="timeline-act">午餐 — Friends the Restaurant</div><div class="timeline-loc">Street 13, 215 · <a href="https://www.google.com/maps/search/Friends+the+Restaurant+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:00</div>
+        <div><div class="timeline-act">吐斯廉屠杀博物馆 Tuol Sleng (S-21)</div><div class="timeline-loc">St. 113 · 仅现金 · <a href="https://www.google.com/maps/place/Tuol+Sleng+Genocide+Museum" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">16:00</div>
+        <div><div class="timeline-act">琼邑克杀戮中心 Choeung Ek</div><div class="timeline-loc">距S-21约15km，建议Tuk-tuk或Grab前往 · <a href="https://www.google.com/maps/place/Choeung+Ek+Killing+Fields" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:00</div>
+        <div><div class="timeline-act">塔山寺 Wat Phnom 看日落</div><div class="timeline-loc">Street 96, Norodom Blvd · <a href="https://www.google.com/maps/place/Wat+Phnom" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19:00</div>
+        <div><div class="timeline-act">独立纪念碑夜景 + 河边夜市晚餐</div><div class="timeline-loc">Norodom Blvd · <a href="https://www.google.com/maps/place/Independence+Monument+Phnom+Penh" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
+        <div class="meal-badge"><b>午餐</b> Friends the Restaurant</div>
+        <div class="meal-badge"><b>晚餐</b> 河边夜市小吃</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 3</div><div class="day-date">1月2日</div></div>
+      <div class="day-theme">金边 → 暹粒</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">07:30</div>
+        <div><div class="timeline-act">乘巴士/小巴前往暹粒（约6-7小时）</div><div class="timeline-loc">推荐 Giant Ibis / Mekong Express，约 $12-18/人</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:30</div>
+        <div><div class="timeline-act">抵达暹粒，入住酒店后午餐</div><div class="timeline-loc">建议住老市场/Pub Street附近</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">15:30</div>
+        <div><div class="timeline-act">购买吴哥通票（3日票 $62）</div><div class="timeline-loc">吴哥企业售票处，距暹粒市区4km</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">16:30</div>
+        <div><div class="timeline-act">巴肯山 Phnom Bakheng 看日落</div><div class="timeline-loc">限流300人，建议16:00前到达 · <a href="https://www.google.com/maps/place/Phnom+Bakheng" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19:00</div>
+        <div><div class="timeline-act">Pub Street 晚餐 + 逛夜市</div><div class="timeline-loc">老市场旁 · <a href="https://www.google.com/maps/search/Pub+Street+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
+        <div class="meal-badge"><b>午餐</b> 巴士途中小食</div>
+        <div class="meal-badge"><b>晚餐</b> Pub Street 自由选</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 4</div><div class="day-date">1月3日</div></div>
+      <div class="day-theme">吴哥窟 + 小圈</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">05:00</div>
+        <div><div class="timeline-act">吴哥窟 Angkor Wat 日出</div><div class="timeline-loc">5:00开门，水池前拍摄经典倒影 · <a href="https://www.google.com/maps/place/Angkor+Wat" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">07:00</div>
+        <div><div class="timeline-act">回酒店早餐 + 短暂休息</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">09:00</div>
+        <div><div class="timeline-act">吴哥通王城 Angkor Thom + 巴戎寺 Bayon</div><div class="timeline-loc">216张"高棉微笑"佛面 · <a href="https://www.google.com/maps/place/Bayon+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:00</div>
+        <div><div class="timeline-act">午餐 — 景点附近餐馆</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:00</div>
+        <div><div class="timeline-act">塔布笼寺 Ta Prohm（《古墓丽影》取景地）</div><div class="timeline-loc">树根与石墙缠绕奇观 · <a href="https://www.google.com/maps/place/Ta+Prohm+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">16:30</div>
+        <div><div class="timeline-act">圣剑寺 Preah Khan</div><div class="timeline-loc">吴哥最大寺庙之一 · <a href="https://www.google.com/maps/place/Preah+Khan+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19:00</div>
+        <div><div class="timeline-act">晚餐 — Cuisine Wat Damnak（创新高棉菜）</div><div class="timeline-loc">建议提前预订 · <a href="https://www.google.com/maps/search/Cuisine+Wat+Damnak+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
+        <div class="meal-badge"><b>午餐</b> 景点附近</div>
+        <div class="meal-badge"><b>晚餐</b> Cuisine Wat Damnak</div>
+      </div>
+      <div class="note-box"><b>贴士：</b>建议全天包Tuk-tuk（$15-18/天），日出需4:30出发。带防晒霜、遮阳帽和充足饮用水。</div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 5</div><div class="day-date">1月4日</div></div>
+      <div class="day-theme">女王宫 + 大圈</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">07:00</div>
+        <div><div class="timeline-act">女王宫 Banteay Srei（"吴哥艺术皇冠上的明珠"）</div><div class="timeline-loc">距暹粒约25km，需包车 · <a href="https://www.google.com/maps/place/Banteay+Srei" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10:00</div>
+        <div><div class="timeline-act">比粒寺 Pre Rup</div><div class="timeline-loc">三层山状寺庙 · <a href="https://www.google.com/maps/place/Pre+Rup+Temple" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:00</div>
+        <div><div class="timeline-act">午餐 — Sugar Palm Restaurant</div><div class="timeline-loc">Wat Bo 村 · <a href="https://www.google.com/maps/search/Sugar+Palm+Restaurant+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:00</div>
+        <div><div class="timeline-act">洞里萨湖 Kampong Phluk 水上村庄日落游船</div><div class="timeline-loc">约4小时 · <a href="https://www.google.com/maps/search/Kampong+Phluk+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:30</div>
+        <div><div class="timeline-act">Apsara 仙女舞蹈表演 + 晚餐</div><div class="timeline-loc">Apsara Theatre, Sivutha Blvd · 约$25-35/人</div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 酒店早餐</div>
+        <div class="meal-badge"><b>午餐</b> Sugar Palm</div>
+        <div class="meal-badge"><b>晚餐</b> Apsara表演套餐</div>
+      </div>
+      <div class="note-box"><b>贴士：</b>女王宫上午光线最佳，雕刻细节最清晰。大圈包车约$30-35/天（含Tuk-tuk等候）。</div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div><div class="day-num">DAY 6</div><div class="day-date">1月5日</div></div>
+      <div class="day-theme">暹粒 → 北京</div>
+    </div>
+    <div class="day-body">
+      <div class="timeline-item">
+        <div class="timeline-time">07:00</div>
+        <div><div class="timeline-act">老市场 Old Market 早餐 + 最后采购</div><div class="timeline-loc">Phsar Chas, 2 Thnou St · <a href="https://www.google.com/maps/search/Old+Market+Phsar+Chas+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">09:00</div>
+        <div><div class="timeline-act">Artisans Angkor 工坊参观</div><div class="timeline-loc">了解高棉丝绸、银器、石雕工艺 · <a href="https://www.google.com/maps/search/Artisans+Angkor+Siem+Reap" class="map-link" target="_blank">Google Maps ↗</a></div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:00</div>
+        <div><div class="timeline-act">退房，前往暹粒机场(SAI)</div><div class="timeline-loc">距市区约6km，建议提前2小时到达</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">下午</div>
+        <div><div class="timeline-act">经昆明/河内/曼谷中转返回北京</div><div class="timeline-loc">飞行约5-9小时（含中转）</div></div>
+      </div>
+      <div class="meals-row">
+        <div class="meal-badge"><b>早餐</b> 老市场小吃</div>
+        <div class="meal-badge"><b>午餐</b> 机场/途中</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 02 ATTRACTIONS ========== -->
+<section class="section" id="attractions">
+  <div class="section-header">
+    <div class="section-icon">🏛</div>
+    <div><div class="section-title">景点</div><div class="section-desc">金边 &amp; 暹粒 · 必去景点与小众宝藏</div></div>
+  </div>
+
+  <!-- Phnom Penh -->
+  <div class="city-badge">金边 PHNOM PENH</div>
+  <div class="subhead">必去景点</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">金边皇宫 &amp; 银殿 <span class="card-title-en">Royal Palace &amp; Silver Pagoda</span></div>
+      <div class="card-desc">柬埔寨国王的官方宫殿，建于1866年。银殿地面铺满5000多块银砖，金碧辉煌。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">8:00-11:00, 14:00-17:00</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$10</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1.5-2小时</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">上午</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Royal+Palace+of+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <span class="tag tag-gold">着装：长裤/长裙，禁止无袖短裤</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">国家博物馆 <span class="card-title-en">National Museum of Cambodia</span></div>
+      <div class="card-desc">柬埔寨最重要的文物收藏机构，展示高棉帝国时期的菩萨头像和印度教雕像。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">8:00-11:00, 14:00-17:00</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$10</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1.5-2小时</span></div>
+        <div class="info-item"><span class="info-label">官网：</span><a href="https://nmc.gov.kh" class="map-link official-link" target="_blank">nmc.gov.kh ↗</a></div>
+      </div>
+      <a href="https://www.google.com/maps/place/National+Museum+of+Cambodia" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <span class="tag">馆内禁止拍照</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">吐斯廉屠杀博物馆 <span class="card-title-en">Tuol Sleng Genocide Museum (S-21)</span></div>
+      <div class="card-desc">原为中学，红色高棉时期改为集中营。现存2000多张受害者照片，是了解柬埔寨现代史的重要场所。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">8:00-17:00 每天</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$5</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1.5-2小时</span></div>
+        <div class="info-item"><span class="info-label">官网：</span><a href="https://tuolsleng.gov.kh" class="map-link official-link" target="_blank">tuolsleng.gov.kh ↗</a></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Tuol+Sleng+Genocide+Museum" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <span class="tag">仅接受现金</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">琼邑克杀戮中心 <span class="card-title-en">Choeung Ek Killing Fields</span></div>
+      <div class="card-desc">红色高棉时期万人坑遗址，17层纪念塔内安放5000多名受害者遗骸。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:30-17:30 每天</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$6（含语音导览）</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1.5-2小时</span></div>
+        <div class="info-item"><span class="info-label">官网：</span><a href="https://choeungk.org" class="map-link official-link" target="_blank">choeungk.org ↗</a></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Choeung+Ek+Killing+Fields" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <span class="tag tag-gold">着装庄重</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">塔山寺 <span class="card-title-en">Wat Phnom</span></div>
+      <div class="card-desc">金边象征性地标，建于1373年。传说Num在山上发现四尊佛像后建寺。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:00-18:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$1</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">30分钟-1小时</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">傍晚日落</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Wat+Phnom" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">独立纪念碑 <span class="card-title-en">Independence Monument</span></div>
+      <div class="card-desc">1962年为纪念柬埔寨脱离法国独立而建，莲花形状高20米，夜晚有灯光效果。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">全天24小时</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">免费</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">清晨或傍晚</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Independence+Monument+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <!-- Siem Reap -->
+  <div class="city-badge sr">暹粒 SIEM REAP</div>
+  <div class="note-box" style="margin-top:12px"><b>吴哥考古公园通票：</b>1日票 $37 · 3日票 $62（10天内任3天）· 7日票 $72（1月内任7天）。12岁以下免费。购票时现场拍照。建议购买3日票。每天16:30起售次日门票。</div>
+
+  <div class="subhead">必去景点</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">吴哥窟 <span class="card-title-en">Angkor Wat</span></div>
+      <div class="card-desc">世界最大宗教纪念性建筑，建于12世纪，五座中央塔楼是其标志性轮廓。日出时分尤为壮观。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">5:00-17:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">2-4小时</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">日出 5:00-6:30</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Angkor+Wat" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <a href="https://www.angkorenterprise.gov.kh/cn" class="map-link official-link" target="_blank">🏛 官网 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">巴戎寺 <span class="card-title-en">Bayon Temple</span></div>
+      <div class="card-desc">吴哥通王城内的国寺，以216张"高棉微笑"巨大佛面闻名。佛像据以国王阇耶跋摩七世容貌雕刻。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:30-17:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1-1.5小时</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">上午光线好</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Bayon+Temple" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">塔布笼寺 <span class="card-title-en">Ta Prohm</span></div>
+      <div class="card-desc">《古墓丽影》取景地，巨大树根与石墙紧密缠绕，"你中有我"的奇观。阇耶跋摩七世为纪念母亲而建。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:30-17:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1-2小时</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">清晨或下午</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Ta+Prohm+Temple" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">女王宫 <span class="card-title-en">Banteay Srei</span></div>
+      <div class="card-desc">吴哥古迹中最精美的石雕艺术代表，朱红色砂岩建成，雕刻极其精细，被称为"吴哥艺术皇冠上的明珠"。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:30-17:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1-1.5小时</span></div>
+        <div class="info-item"><span class="info-label">距离：</span><span class="info-value">距暹粒约25km</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Banteay+Srei" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">圣剑寺 <span class="card-title-en">Preah Khan</span></div>
+      <div class="card-desc">吴哥最大寺庙之一，阇耶跋摩七世为纪念父亲而建。规模宏大，结构复杂。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:30-18:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1-2小时</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Preah+Khan+Temple" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">巴肯山日落 <span class="card-title-en">Phnom Bakheng</span></div>
+      <div class="card-desc">吴哥看日落的传统首选地，9世纪末建造的寺庙山。山顶可俯瞰吴哥窟、西池和洞里萨湖全景。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">5:00-19:00（17:30停入）</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">限流：</span><span class="info-value">300人</span></div>
+        <div class="info-item"><span class="info-label">最佳：</span><span class="info-value">16:00前到达</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Phnom+Bakheng" class="map-link" target="_blank">📍 Google Maps ↗</a>
+      <span class="tag tag-gold">旺季需提前排队</span>
+    </div>
+  </div>
+
+  <div class="subhead">小众宝藏</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">崩密列 <span class="card-title-en">Beng Mealea</span></div>
+      <div class="card-desc">被称为"吴哥窟的另一版本"，更加原始荒芜，树根与废墟融为一体。距暹粒约60km。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:00-17:30</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value price-tag">$10（持通票免费）</span></div>
+        <div class="info-item"><span class="info-label">交通：</span><span class="info-value">包车$45-55</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Beng+Mealea" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">罗洛寺群 <span class="card-title-en">Roluos Group</span></div>
+      <div class="card-desc">9世纪高棉帝国最早的寺庙群，包括巴空寺、神牛寺、罗雷寺。了解吴哥文明起源的重要遗址。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">5:00-19:00</span></div>
+        <div class="info-item"><span class="info-label">门票：</span><span class="info-value">含通票</span></div>
+        <div class="info-item"><span class="info-label">距离：</span><span class="info-value">距暹粒约13km</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Roluos+Group" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 03 SHOPPING ========== -->
+<section class="section" id="shopping">
+  <div class="section-header">
+    <div class="section-icon">🛍</div>
+    <div><div class="section-title">购物</div><div class="section-desc">金边 &amp; 暹粒 · 购物区与特色伴手礼</div></div>
+  </div>
+
+  <div class="city-badge">金边 PHNOM PENH</div>
+  <div class="subhead">购物区域</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">中央市场 <span class="card-title-en">Central Market / Phsar Thmei</span></div>
+      <div class="card-desc">1937年法国殖民时期建造，标志性黄色装饰艺术风格穹顶和十字形布局，东南亚最杰出的历史建筑之一。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">开放：</span><span class="info-value">7:00-18:00 每天</span></div>
+        <div class="info-item"><span class="info-label">适合：</span><span class="info-value">珠宝、服装、手工艺品、货币兑换</span></div>
+      </div>
+      <a href="https://www.google.com/maps/place/Central+Market+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">俄罗斯市场 <span class="card-title-en">Russian Market / Toul Tom Poung</span></div>
+      <div class="card-desc">传统室内市场，有小吃、服装、纪念品、手工艺品和丝绸摊位。当地人和游客都爱逛。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">适合：</span><span class="info-value">丝绸、手工艺品、纪念品、小食</span></div>
+      </div>
+      <a href="https://www.google.com/maps/search/Russian+Market+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">AEON Mall</div>
+      <div class="card-desc">大型购物中心，适合在空调环境中购物、用餐和休息，品牌齐全。</div>
+      <a href="https://www.google.com/maps/search/AEON+Mall+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">河边夜市 <span class="card-title-en">Phnom Penh Night Market</span></div>
+      <div class="card-desc">位于Sisowath Quay河边，傍晚沿河散步后可逛夜市，有服装、饰品和当地小吃。</div>
+      <a href="https://www.google.com/maps/search/Phnom+Penh+Night+Market+Sisowath+Quay" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="city-badge sr">暹粒 SIEM REAP</div>
+  <div class="subhead">购物区域</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">老市场 <span class="card-title-en">Old Market / Phsar Chas</span></div>
+      <div class="card-desc">暹粒市中心传统市场，靠近Pub Street。有食品摊、丝绸、珠宝和手工艺品摊位。</div>
+      <a href="https://www.google.com/maps/search/Old+Market+Phsar+Chas+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">吴哥夜市 <span class="card-title-en">Angkor Night Market</span></div>
+      <div class="card-desc">约200座竹棚的夜间市场，手工艺品、丝绸画作、再生材料手袋、雕刻品，气氛热闹。</div>
+      <a href="https://www.google.com/maps/search/Angkor+Night+Market+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Made in Cambodia Market</div>
+      <div class="card-desc">小型精品市场，主打本地手工制品和当地食品，设计感更强、更独特。</div>
+      <a href="https://www.google.com/maps/search/Made+in+Cambodia+Market+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Artisans Angkor</div>
+      <div class="card-desc">公平贸易工坊，设20多个摊位，可观察工匠制作过程并了解传统工艺。利润支持工匠家庭。</div>
+      <a href="https://www.google.com/maps/search/Artisans+Angkor+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="subhead">特色伴手礼</div>
+  <div class="souvenir-grid">
+    <div class="souvenir-card">
+      <div class="souvenir-name">Kampot 胡椒</div>
+      <div class="souvenir-note"><b>价格：</b>约 $5/100g 起<br><b>哪里买：</b>中央市场、老市场周边<br><b>说明：</b>柬埔寨代表性香料，以辛辣和独特风味闻名，购买时选信誉店铺。</div>
+    </div>
+    <div class="souvenir-card">
+      <div class="souvenir-name">棕榈糖 Palm Sugar</div>
+      <div class="souvenir-note"><b>价格：</b>约 $2-5/包<br><b>哪里买：</b>老市场、中央市场、暹粒手工艺品市场<br><b>说明：</b>棕榈树汁液制成，甜味柔和，用于甜点和咖啡。</div>
+    </div>
+    <div class="souvenir-card">
+      <div class="souvenir-name">柬埔寨丝绸</div>
+      <div class="souvenir-note"><b>价格：</b>约 $20-120+/件<br><b>哪里买：</b>老市场、Artisans Angkor、Koh Dach丝绸岛<br><b>说明：</b>手工织造，传统高棉纹样，多用天然染料。</div>
+    </div>
+    <div class="souvenir-card">
+      <div class="souvenir-name">Krama 围巾</div>
+      <div class="souvenir-note"><b>价格：</b>普通 $1-2.5 · 精品 $5-15<br><b>哪里买：</b>各市场均有<br><b>说明：</b>柬埔寨传统方巾，可做头巾、围巾、包巾，红白格纹为经典图案。</div>
+    </div>
+    <div class="souvenir-card">
+      <div class="souvenir-name">银器 Silverware</div>
+      <div class="souvenir-note"><b>价格：</b>约 $8-80/件<br><b>哪里买：</b>俄罗斯市场、Artisans Angkor<br><b>说明：</b>常见莲花、Naga蛇和Apsara等高棉传统纹样。</div>
+    </div>
+    <div class="souvenir-card">
+      <div class="souvenir-name">手工艺品</div>
+      <div class="souvenir-note"><b>价格：</b>约 $2-30/件<br><b>哪里买：</b>吴哥夜市、Made in Cambodia Market、Artisans Angkor<br><b>说明：</b>木雕、泥塑、丝绸画、手绣披肩、香薰等。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 EXPERIENCES ========== -->
+<section class="section" id="experiences">
+  <div class="section-header">
+    <div class="section-icon">🎭</div>
+    <div><div class="section-title">体验</div><div class="section-desc">金边 &amp; 暹粒 · 文化体验与特色活动</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">高棉烹饪课 <span class="card-title-en">Khmer Cooking Class</span></div>
+      <span class="tag">烹饪课</span><span class="tag">文化体验</span>
+      <div class="card-desc">在本地人家中学习制作4道高棉传统菜肴。行程包括逛当地市场采购新鲜食材、亲手制作并品尝成果。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">3-4小时</span></div>
+        <div class="info-item"><span class="info-label">价格：</span><span class="info-value price-tag">$15-35/人</span></div>
+        <div class="info-item"><span class="info-label">地点：</span><span class="info-value">金边 &amp; 暹粒均有</span></div>
+        <div class="info-item"><span class="info-label">预订：</span><span class="info-value">Agoda/GetYourGuide等平台</span></div>
+      </div>
+      <div class="note-box"><b>为什么独特：</b>在本地人家里学习而非商业厨房，深入体验柬埔寨家庭烹饪文化。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Apsara 仙女舞蹈表演 <span class="card-title-en">Apsara Dance Show</span></div>
+      <span class="tag">文化表演</span><span class="tag">晚餐</span>
+      <div class="card-desc">传统高棉宫廷舞蹈，舞者佩戴华丽金色头饰，手部动作与吴哥窟浮雕上的仙女动作一致。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">75分钟+晚餐</span></div>
+        <div class="info-item"><span class="info-label">价格：</span><span class="info-value price-tag">$25-35/人</span></div>
+        <div class="info-item"><span class="info-label">地点：</span><span class="info-value">暹粒 Apsara Theatre</span></div>
+        <div class="info-item"><span class="info-label">预订：</span><span class="info-value">Viator/酒店代订</span></div>
+      </div>
+      <a href="https://www.google.com/maps/search/Apsara+Theatre+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">洞里萨湖水上村庄游船 <span class="card-title-en">Tonle Sap Floating Village</span></div>
+      <span class="tag">自然</span><span class="tag">日落</span>
+      <div class="card-desc">游览洞里萨湖水上村庄，看浮村房屋、水上学校、渔民生活，了解旱雨季水位变化对当地生活的影响。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">约4小时</span></div>
+        <div class="info-item"><span class="info-label">价格：</span><span class="info-value price-tag">$39-50/人</span></div>
+        <div class="info-item"><span class="info-label">地点：</span><span class="info-value">Kampong Khleang / Kampong Phluk</span></div>
+      </div>
+      <div class="note-box"><b>为什么独特：</b>Kampong Phluk 日落时分红树林水道和金色湖面景色独特。</div>
+      <a href="https://www.google.com/maps/search/Kampong+Phluk+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">陶瓷工坊 <span class="card-title-en">Khmer Ceramics &amp; Fine Arts</span></div>
+      <span class="tag">工坊</span><span class="tag">手工艺</span>
+      <div class="card-desc">使用本地黏土手工塑形并雕刻吴哥建筑纹样，作品带有历史感和古文明气息。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">约3小时</span></div>
+        <div class="info-item"><span class="info-label">地点：</span><span class="info-value">暹粒陶艺村附近</span></div>
+      </div>
+      <div class="note-box"><b>为什么独特：</b>将吴哥建筑纹样与高棉陶瓷工艺结合，作品具有鲜明的柬埔寨文化特征。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">湄公河日落游船 <span class="card-title-en">Mekong Sunset Cruise</span></div>
+      <span class="tag">日落</span><span class="tag">游船</span>
+      <div class="card-desc">在金边湄公河畔乘双体船观赏日落，提供自制鸡尾酒。航线可观赏皇宫和水上村庄。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时长：</span><span class="info-value">1.5-2小时</span></div>
+        <div class="info-item"><span class="info-label">价格：</span><span class="info-value price-tag">$8起</span></div>
+        <div class="info-item"><span class="info-label">地点：</span><span class="info-value">金边 Sisowath Quay</span></div>
+      </div>
+      <a href="https://www.google.com/maps/search/Sisowath+Quay+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">吴哥窟日出体验 <span class="card-title-en">Angkor Wat Sunrise</span></div>
+      <span class="tag">日出</span><span class="tag">经典体验</span>
+      <div class="card-desc">清晨前往吴哥窟水池，在日出时分观赏倒影和晨雾中的寺庙剪影。体感温度约25-28°C，非常舒适。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">时间：</span><span class="info-value">5:00-6:30</span></div>
+        <div class="info-item"><span class="info-label">价格：</span><span class="info-value price-tag">$23-28/人（不含门票）</span></div>
+      </div>
+      <div class="note-box"><b>为什么独特：</b>吴哥窟水池日出是最经典的吴哥体验，清晨光影和倒影效果无可替代。</div>
+      <a href="https://www.google.com/maps/place/Angkor+Wat" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 05 DINING ========== -->
+<section class="section" id="dining">
+  <div class="section-header">
+    <div class="section-icon">🍜</div>
+    <div><div class="section-title">餐饮</div><div class="section-desc">当地小吃 + 值得专程去的餐厅</div></div>
+  </div>
+  <div class="note-box"><b>说明：</b>本指南严格限制为两类餐饮推荐 — 当地小吃/街边美食 和 值得专程去的餐厅。不包含高端餐厅、咖啡馆、酒吧或连锁快餐。</div>
+
+  <!-- Local Snacks -->
+  <div class="subhead">当地小吃推荐 / Local Snacks</div>
+
+  <div class="city-badge">金边 PHNOM PENH</div>
+  <div class="grid-2">
+    <div class="food-card snack">
+      <div class="food-name">高棉米粉 <span class="food-name-local">Nom Banh Chok / ក្រៀមក្រឹម</span></div>
+      <div class="food-shop">推荐：Original Nom Banh Chok（中央市场附近）</div>
+      <div class="card-desc">发酵米粉配鱼咖喱汤、香料和蔬菜，柬埔寨早餐首选。下午游客较少时购买更便捷。</div>
+      <span class="food-price">$0.5-1.0/份</span>
+      <span class="rating-badge">★ 5.0 Google</span>
+      <a href="https://www.google.com/maps/search/Original+Nom+Banh+Chok+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">高棉煎饼 <span class="food-name-local">Banh Chao / បន្ទោរ</span></div>
+      <div class="food-shop">推荐：Russian Market 周边街头摊贩</div>
+      <div class="card-desc">薄煎饼包裹鸡蛋、猪肉、洋葱，蘸泰式鱼露或辣椒酱食用。边逛市场边购买。</div>
+      <span class="food-price">$1.0-2.0/份</span>
+      <a href="https://www.google.com/maps/search/Banh+Chao+Russian+Market+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">水果冰沙 <span class="food-name-local">Fruit Shakes / ទឹកផ្លែឈើ</span></div>
+      <div class="food-shop">推荐：Sisowath Quay 河边摊贩</div>
+      <div class="card-desc">芒果、香蕉、榴莲、火龙果等多种口味。傍晚河边散步时最易遇到。</div>
+      <span class="food-price">$1.0-2.5/杯</span>
+      <a href="https://www.google.com/maps/search/Sisowath+Quay+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">竹筒糯米饭 <span class="food-name-local">Bamboo Sticky Rice / ក្រិនជាត</span></div>
+      <div class="food-shop">推荐：中央市场 / Sisowath Quay 周边小摊</div>
+      <div class="card-desc">糯米饭可甜可咸，有的加入椰奶或椰丝。河边夜市和中央市场周边适合寻找。</div>
+      <span class="food-price">$0.5-1.5/份</span>
+      <a href="https://www.google.com/maps/search/Central+Market+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="city-badge sr">暹粒 SIEM REAP</div>
+  <div class="grid-2">
+    <div class="food-card snack">
+      <div class="food-name">高棉米粉 <span class="food-name-local">Nom Banh Chok / ក្រៀមក្រឹម</span></div>
+      <div class="food-shop">推荐：Phum Num Banh Chok / 老市场周边</div>
+      <div class="card-desc">新鲜米粉配绿色鱼咖喱，加香草、香蕉花、黄瓜和豆芽。暹粒早餐经典。</div>
+      <span class="food-price">$1.0-4.0/份</span>
+      <span class="rating-badge">★ 4.6 Google</span>
+      <a href="https://www.google.com/maps/search/Phum+Num+Banh+Chok+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">柬埔寨烤猪肉饭 <span class="food-name-local">Bai Sach Chrouk / បាយសាច់ជ្រូក</span></div>
+      <div class="food-shop">推荐：Pub Street / 老市场周边早餐摊</div>
+      <div class="card-desc">烤猪肉配米饭，柬埔寨早餐经典。暹粒早餐摊较集中，建议早上去。</div>
+      <span class="food-price">$1.0-1.5/份</span>
+      <a href="https://www.google.com/maps/search/Bai+Sach+Chrouk+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">油炸昆虫 <span class="food-name-local">Fried Insects / បង្គាបាញ់</span></div>
+      <div class="food-shop">推荐：Pub Street / Angkor Night Market 周边小摊</div>
+      <div class="card-desc">炸蟋蟀、蚕蛹、水甲虫等。口味偏酥脆，配啤酒适合冒险型食客。建议小份尝试。</div>
+      <span class="food-price">$1.0-3.0/小份</span>
+      <a href="https://www.google.com/maps/search/Pub+Street+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card snack">
+      <div class="food-name">椰汁咖喱鱼 <span class="food-name-local">Amok / ក្រាមត្រីម្រេច</span></div>
+      <div class="food-shop">推荐：Pub Street 周边餐厅</div>
+      <div class="card-desc">用新鲜河鱼、椰奶、香料蒸制，常装在香蕉叶杯中，柬埔寨标志性菜品。配米饭食用。</div>
+      <span class="food-price">$4-7/人</span>
+      <a href="https://www.google.com/maps/search/Amok+Pub+Street+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <!-- Worth a Detour -->
+  <div class="subhead">值得专程去的餐厅 / Worth a Detour</div>
+
+  <div class="city-badge">金边 PHNOM PENH</div>
+  <div class="grid-2">
+    <div class="food-card detour">
+      <div class="food-name">Malis Restaurant <span class="food-name-local">馬利斯餐廳</span></div>
+      <div class="food-shop">招牌菜：Fish Amok、Lok Lak、Beef Salad、Samlor Machu</div>
+      <div class="card-desc">由知名柬埔寨厨师 Luu Meng 主理，菜单提供多种传统高棉菜。适合系统体验柬埔寨美食。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>136 Norodom Blvd</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$30-60</span></div>
+      </div>
+      <span class="rating-badge">★ 4.3 Google</span>
+      <span class="tag tag-gold">建议预订</span>
+      <a href="https://www.google.com/maps/search/Malis+Restaurant+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card detour">
+      <div class="food-name">Friends the Restaurant</div>
+      <div class="food-shop">招牌菜：Cambodian Spring Rolls、Caramelized Pork、Fruit Shakes</div>
+      <div class="card-desc">为弱势青年提供餐饮服务培训，兼具公益属性。菜品融合传统高棉风味与国际菜。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>215 Street 13</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$5-12</span></div>
+      </div>
+      <span class="rating-badge">★ 4.5 Google</span>
+      <a href="https://www.google.com/maps/search/Friends+the+Restaurant+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card detour">
+      <div class="food-name">Elephant Bar <span class="food-name-local">Raffles Hotel Le Royal</span></div>
+      <div class="food-shop">招牌：Femme Fatale Cocktail、Bar Bites</div>
+      <div class="card-desc">历史悠久的酒店酒吧，Femme Fatale 鸡尾酒与1967年Jackie Kennedy到访暹粒时期的历史有关。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>92 Rukhak Vithei</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$14+（鸡尾酒）</span></div>
+      </div>
+      <span class="rating-badge">★ 4.6 Google</span>
+      <a href="https://www.google.com/maps/search/Elephant+Bar+Raffles+Phnom+Penh" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="city-badge sr">暹粒 SIEM REAP</div>
+  <div class="grid-2">
+    <div class="food-card detour">
+      <div class="food-name">Cuisine Wat Damnak <span class="food-name-local">達納克餐廚</span></div>
+      <div class="food-shop">招牌菜：Fish Amok、Beef Lok Lak、季节性菜单</div>
+      <div class="card-desc">以创新高棉菜和季节性食材著称，菜单每两周更新。适合品尝更精致的柬埔寨菜。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>Wat Damnak, Aleah Road</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$15-30</span></div>
+      </div>
+      <span class="rating-badge">★ 4.6 Google</span>
+      <span class="tag tag-gold">建议预订</span>
+      <a href="https://www.google.com/maps/search/Cuisine+Wat+Damnak+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card detour">
+      <div class="food-name">Chanrey Tree <span class="food-name-local">赤蘭樹餐廳</span></div>
+      <div class="food-shop">招牌菜：Prahok K'tis、Herb-Grilled Fish、Fresh Spring Rolls</div>
+      <div class="card-desc">位于暹粒河边，环境优雅，提供传统高棉菜。适合安静晚餐。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>Pokambor Ave</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$6-15</span></div>
+      </div>
+      <span class="rating-badge">★ 4.5 Google</span>
+      <span class="tag tag-gold">建议预订</span>
+      <a href="https://www.google.com/maps/search/Chanrey+Tree+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card detour">
+      <div class="food-name">Sugar Palm Restaurant <span class="food-name-local">糖棕餐廳</span></div>
+      <div class="food-shop">招牌菜：Shrimp Cakes、Fish Amok、Squid with Kampot Peppers</div>
+      <div class="card-desc">位于Wat Bo村，提供传统高棉菜。菜单以美元标示且含10% VAT。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>Street 27, Wat Bo Village</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$5-15</span></div>
+      </div>
+      <span class="rating-badge">★ 4.4 Google</span>
+      <span class="tag tag-gold">建议预订</span>
+      <a href="https://www.google.com/maps/search/Sugar+Palm+Restaurant+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+    <div class="food-card detour">
+      <div class="food-name">Viroth's Restaurant</div>
+      <div class="food-shop">招牌菜：Fish Amok、Prahok K'tis、Herb-Grilled Fish</div>
+      <div class="card-desc">位于Wat Bo村，提供精致高棉菜和浪漫法餐氛围。菜品使用湄公河和洞里萨湖河鲜，有素食选项。</div>
+      <div class="info-grid">
+        <div class="info-item"><span class="info-label">地址：</span>99 Wat Bo Street</div>
+        <div class="info-item"><span class="info-label">人均：</span><span class="price-tag">$8-15</span></div>
+      </div>
+      <span class="rating-badge">★ 4.3 Google</span>
+      <span class="tag tag-gold">建议预订</span>
+      <a href="https://www.google.com/maps/search/Viroth+Restaurant+Siem+Reap" class="map-link" target="_blank">📍 Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 LOCAL TIPS ========== -->
+<section class="section" id="tips">
+  <div class="section-header">
+    <div class="section-icon">💡</div>
+    <div><div class="section-title">当地贴士</div><div class="section-desc">交通、文化、天气、货币与安全</div></div>
+  </div>
+
+  <div class="tip-category">
+    <div class="tip-title">🚌 当地交通</div>
+    <p class="tip-para"><b>金边市内：</b>突突车(Tuk-tuk)短途$1.5-3，中途$3-5，机场到市区$7-10。推荐使用 Grab 或 PassApp APP打车，避免议价。Grab突突车包车2小时约$8，4小时约$22。</p>
+    <p class="tip-para"><b>金边→暹粒：</b>大巴(Giant Ibis/Mekong Express)约$12-18，5.5-7小时，最常用。飞机约$52-90，45-50分钟。包车约$70起，5-6小时。</p>
+    <p class="tip-para"><b>暹粒市内：</b>突突车短途$1-3，吴哥小圈一天$15-18，大圈$18-22。推荐全天包Tuk-tuk，司机兼向导，约$20-35/天。</p>
+    <ul class="tip-list">
+      <li><b>Grab APP：</b>支持打车和突突车，覆盖金边和暹粒主要城市，价格透明</li>
+      <li><b>PassApp：</b>柬埔寨本地打车APP，覆盖面广</li>
+      <li><b>议价提醒：</b>路边突突车建议先谈好价格，或直接用Grab/PassApp避免议价</li>
+      <li><b>吴哥包车：</b>景点较远，建议全天包车或半包车，不要单程叫车</li>
+    </ul>
+  </div>
+
+  <div class="tip-category">
+    <div class="tip-title">🙏 文化礼仪</div>
+    <ul class="tip-list">
+      <li><b>寺庙着装：</b>必须覆盖肩膀和膝盖，不能穿吊带、无袖上衣、短裤。吴哥窟内殿着装执行较严格，不合规可能无法进入。</li>
+      <li><b>脱鞋：</b>进入佛殿前通常需脱鞋，建议穿方便穿脱的鞋子</li>
+      <li><b>头部禁忌：</b>柬埔寨文化中头部最神圣，不要随意触摸他人头部（包括小孩）</li>
+      <li><b>脚部禁忌：</b>不应将脚底朝向佛像、僧侣或他人，在寺庙内尤其注意</li>
+      <li><b>僧侣互动：</b>不要触摸僧侣，女性不要直接触碰僧侣，交谈时保持礼貌距离</li>
+      <li><b>拍照：</b>拍摄僧侣前应先征得同意，寺庙内保持安静，手机调至静音</li>
+    </ul>
+  </div>
+
+  <div class="tip-category">
+    <div class="tip-title">☀️ 天气与穿着</div>
+    <p class="tip-para">12月底至1月初是柬埔寨<b>旱季</b>，全年最佳旅游时间。白天温暖，夜晚凉爽，降水少，湿度适中。属于旅游旺季。</p>
+    <ul class="tip-list">
+      <li><b>金边温度：</b>日间约28-31°C，夜间约18-22°C</li>
+      <li><b>暹粒温度：</b>日间约30-31°C，夜间约18-21°C，日出时段较凉爽</li>
+      <li><b>穿着建议：</b>白天轻薄透气长袖衬衫、短袖T恤、长裤/长裙。寺庙带薄外套或披肩遮盖肩膀。夜间薄长袖。穿方便脱鞋的鞋款。</li>
+      <li><b>防晒防蚊：</b>白天紫外线强，涂防晒霜、戴帽子和太阳镜。使用驱蚊液，优先浅色长袖轻薄衣物。</li>
+    </ul>
+  </div>
+
+  <div class="tip-category">
+    <div class="tip-title">💵 货币与支付</div>
+    <ul class="tip-list">
+      <li><b>双币流通：</b>柬埔寨使用瑞尔(KHR)和美元(USD)双币流通。大额交易用美元，小额找零用瑞尔。</li>
+      <li><b>汇率参考：</b>1美元 ≈ 4,000瑞尔（日常交易按1:4000结算）</li>
+      <li><b>现金为主：</b>尤其小额交易和突突车。准备干净、无折痕的美元现金。</li>
+      <li><b>信用卡：</b>酒店、大型餐厅接受，手续费可能较高</li>
+      <li><b>小费文化：</b>无固定标准。餐厅5-10%（如服务费未含），导游$1-2，酒店清洁少量小费。以表示感谢为主。</li>
+      <li><b>ATM：</b>金边、暹粒市区ATM较多，可提取美元或瑞尔</li>
+    </ul>
+  </div>
+
+  <div class="tip-category">
+    <div class="tip-title">⚠️ 安全与其他</div>
+    <ul class="tip-list">
+      <li><b>治安：</b>总体较好，注意人多地方防抢夺包/手机。避免深夜独行。旅游区有旅游警察。</li>
+      <li><b>紧急电话：</b>匪警117 · 医疗急救119 · 火警118 · 中国驻柬使馆求助031-2012345</li>
+      <li><b>饮食安全：</b>自来水不要直饮，只喝瓶装水或煮沸水。避免生食，路边摊优先现做现卖熟食。</li>
+      <li><b>电压插座：</b>220V电压，A/C/F型插座，建议携带万能转换插头</li>
+      <li><b>签证：</b>中国护照可申请电子签证(eVisa)，官网 www.evisa.gov.kh，费用约$30，3个工作日，停留30天。12月底出行不在免签试点窗口内（2026年6月15日-10月15日），需提前办签证。</li>
+      <li><b>SIM卡：</b>机场约$8-12，7天无限流量约$3-5。主要运营商Smart、Cellcard、Metfone。也支持eSIM。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer">
+  <p>柬埔寨金边 &amp; 暹粒 · 12.31-1.5 · 6天5晚旅行手册</p>
+  <p style="margin-top:6px;opacity:0.5;">Generated by inChina-travel-guide-skill · Region: International · Data sources: Google Maps / Official Websites / Google Ratings</p>
+</div>
+
+</body>
+</html>
